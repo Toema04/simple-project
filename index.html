@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;700&family=Inter:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&family=Spline+Sans:wght@300;400;500;600;700&family=Yantramanav:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <title>template 11</title>
+    <title>Simple Project</title>
 </head>
 <body>
     <div class="theMother">
@@ -24,22 +24,26 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
+            
+            <button class="btn">
+                <a class="btn-a" href="#navbar-logo">Up</a>
+            </button>
             <ul class="nav-menu">
                 <li>
-                    <a href="" class="nav-links">Home</a>
+                    <a href="/" class="nav-links">Home</a>
                 </li>
                 <li>
-                    <a href="" class="nav-links">Services</a>
+                    <a href="#services" class="nav-links">Services</a>
                 </li>
                 <li>
-                    <a href="" class="nav-links">About US</a>
+                    <a href="#about" class="nav-links">About US</a>
                 </li>
                 <li>
-                    <a href="" class="nav-links">Contact US</a>
+                    <a href="#contact" class="nav-links">Contact US</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="" class="nav-links-btn">Sign-Up</a>
-                </li>
+                </li> -->
             </ul>
         </nav>
     </div>
@@ -54,7 +58,7 @@
     </div>
 </div>
 
-<div class="services">
+<div class="services" id="services">
     <h2>services</h2>
     <div class="container">
         <div class="box">
@@ -117,29 +121,29 @@
     </div>
 </div>
 <!-- Start team -->
-<div class="team-box">
+<div class="team-box" id="about">
     <h2>My Team</h2>
     <div class="box-card">
-    <span style="--i:1;"><img src="image/wallpaperflare.com_wallpaper (21).jpg"></span>
-    <span style="--i:2;"><img src="image/wallpaperflare.com_wallpaper (22).jpg"></span>
-    <span style="--i:3;"><img src="image/wallpaperflare.com_wallpaper (23).jpg"></span>
-    <span style="--i:4;"><img src="image/wallpaperflare.com_wallpaper (3).jpg"></span>
-    <span style="--i:5;"><img src="image/wallpaperflare.com_wallpaper (8).jpg"></span>
-    <span style="--i:6;"><img src="image/wallpaperflare.com_wallpaper (5).jpg"></span>
-    <span style="--i:7;"><img src="image/wallpaperflare.com_wallpaper (2).jpg"></span>
-    <span style="--i:8;"><img src="image/wallpaperflare.com_wallpaper (12).jpg"></span>
+    <span style="--i:1;"><img src="image/wallpaperflare.com_wallpaper (21).jpg" class="im"></span>
+    <span style="--i:2;"><img src="image/wallpaperflare.com_wallpaper (22).jpg" class="im"></span>
+    <span style="--i:3;"><img src="image/wallpaperflare.com_wallpaper (23).jpg" class="im"></span>
+    <span style="--i:4;"><img src="image/wallpaperflare.com_wallpaper (3).jpg" class="im"></span>
+    <span style="--i:5;"><img src="image/wallpaperflare.com_wallpaper (8).jpg" class="im"></span>
+    <span style="--i:6;"><img src="image/wallpaperflare.com_wallpaper (5).jpg" class="im"></span>
+    <span style="--i:7;"><img src="image/wallpaperflare.com_wallpaper (2).jpg" class="im"></span>
+    <span style="--i:8;"><img src="image/wallpaperflare.com_wallpaper (12).jpg" class="im"></span>
 </div>
     </div>
 <!-- End team -->
 
-<div class="contact">
+<div class="contact" id="contact">
     <div class="contact-container">
         <div class="contact-box">
-            <i class="fas fa-edit"></i>
-            <div class="info">
+            <!-- <i class="fas fa-edit"></i> -->
+            <!-- <div class="info">
                 <h2>Contact US</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut placeat inventore est veniam quod asperiores nulla maiores. Asperiores, ratione?</p>
-            </div>
+            </div> -->
         </div>
         <!-- <div class="contact-box">
             <i class="fas fa-edit"></i>
@@ -152,6 +156,7 @@
         <div class="from">
             <input class="saif" type="text" placeholder="you user">
             <input class="saif" type="password" placeholder="password">
+            <!-- <textarea class="saif" type="text" placeholder="send massage"></textarea> -->
         </div>
     </div>
 </div>

@@ -197,6 +197,29 @@ ul {
     font-size: 41px;
     color: whitesmoke;
 }
+
+/* .btn-dev {
+  
+    bottom: auto;
+} */
+.btn-a{
+    color: white;
+}
+.btn {
+    width: 50px;
+    height: 50px;
+    background-color: #f9423d;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 9px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 999;
+}
 /* End home */
 /* start services */
 .services {
@@ -221,6 +244,24 @@ ul {
     transition: all 0.3s ease;
 
 }
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .services .container {
+        /* width: 100%; */
+        display: grid;
+        grid-template-columns: auto auto;
+
+    }
+}
+@media screen and (max-width: 767px) {
+    .services .container {
+        /* width: 100%; */
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+}
+
 .services .container .box:hover {
     box-shadow: 0 2px 20px rgb(0 0 0 / 30%);
     transform: scale(1.1);
@@ -255,8 +296,25 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    /* right: 50%; */
 }
 
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .team-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 767px) {
+    .box-card {
+        width: 100%;
+    }
+    .im {
+        width: 5rem;
+    }
+}
 
 .box-card {
     position: relative;
@@ -267,10 +325,10 @@ ul {
 }
 @keyframes animate {
     0% {
-        transform: perspective(1000px) rotateY(0deg);
+        transform: perspective(2000px) rotateY(0deg);
     }
     100% {
-        transform: perspective(1000px) rotateY(360deg);
+        transform: perspective(2000px) rotateY(360deg);
     }
 }
 
@@ -285,7 +343,7 @@ ul {
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
     -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #000);
 }
-.box-card span img {
+.box-card span .im {
     position: absolute;
     top: 0;
     left: 0;
@@ -300,12 +358,20 @@ ul {
     padding: 100px 0;
 }
 .contact-container {
-    display: grid;
-    grid-template-columns: auto auto;
+    /* display: grid;
+    grid-template-columns: auto;
     gap: 30px;
     margin: 0 50px;
+    justify-content: center; */
 }
-.contact-box {
+@media screen and (min-width: 767px) {
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* .contact-box {
     background-color: #fff;
     box-shadow: 0 2px 20px rgb(0 0 0 / 10%);
     width: 560px;
@@ -325,6 +391,12 @@ ul {
 }
 .contact-box .info {
     text-align: center;
+} */
+.contact-container .from {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    gap: 50px;
 }
 .contact-container .from .saif {
     display: block;
@@ -337,6 +409,9 @@ ul {
     outline: none;
     transition: all 0.3s ease;
     padding: 12px 38px;
+    display: flex;
+    justify-content: center;
+    /* width: 265px; */
 }
 .contact-container .from .saif:focus {
     border: 2px solid #3498db;
